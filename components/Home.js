@@ -16,7 +16,7 @@ function Home() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    fetch(`https://newsapi.org/v2/everything?sources=the-verge&apiKey=76288293134a4616865d8e75b883b3dd`)
+    fetch(`https://newsapi.org/v2/everything?sources=the-verge&apiKey=${process.env}`)
       .then(response => response.json())
       .then(data => {
         setArticlesData(data.articles);
