@@ -1,0 +1,186 @@
+/* .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+
+
+.title {
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover, .title a:focus, .title a:active {
+  text-decoration: underline;
+} */
+
+.main{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+.main>h1{
+  font-family: Montserrat;
+  font-size: 3rem;
+  margin-top: 7rem;
+  text-align: center;
+}
+.Layer{
+  position: relative;
+  font-family: Montserrat;
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: 25rem;
+  border-radius: 1rem;
+  background-color:rgb(255, 255, 255);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.Layer>h2{
+  padding-top: 2rem;
+  display: block;
+  text-align: center;
+}
+.Layer>ul{
+  position: absolute;
+  bottom: 1rem;
+  list-style: none;
+ 
+
+}
+.Layer>ul>li{
+  cursor: pointer;
+  color: white;
+  border-radius: .3rem;
+  padding: .5rem;
+  background-color: rgb(166, 82, 189);
+  margin-left: 1rem;
+  float: right;
+}
+.Container::-webkit-scrollbar {
+  display: none;
+}
+.Container{
+  padding: 1rem;
+  margin: 6rem auto;
+  height: 35rem;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  width: 100%;
+}
+.save{
+  transition: all .3s;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  right: 1rem;
+  background-color: red;
+  border-radius: 100%;
+  color: red;
+}
+.save:hover{
+  transition: all .3s;
+ 
+  top: 1.4rem;
+  width: 1.9rem;
+  height: 1.9rem;
+  right: 1rem;
+  background-color: red;
+  border-radius: 100%;
+  color: red;
+
+}
+.Container>div>img{
+  border-radius: 1rem;
+  width: 100%;
+  display: block;
+  margin: 33rem auto;
+}
+.Container>div{
+  display: block;
+  position: relative;
+  border-radius: 1rem;
+  margin: 1rem auto;
+  width: 25rem;
+  background-color: white;
+  height: 31rem;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
+
+/* 
+.Container>div:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-45deg, #ff3d00 0%, #0400ff 100% );
+  transform: translate3d(0px, 20px, 0) scale(0.95);
+  filter: blur(20px);
+  opacity: var(0.7);
+  transition: opacity 0.3s;
+  border-radius: inherit;
+}
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+
+*/
+/*
+.Container>div:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+}
+       */
+
+.Container>div>img{
+  display: block;
+  margin: 0 auto;
+}
+.Container>div>div>h2{
+  font-family: Montserrat;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.Container>div>div>p{
+  font-family: Montserrat;
+
+  text-align: center;
+  font-weight: 400;
+}
+.Container>div>div>p:last-child{
+  margin: 0 auto;
+  width: 90%;
+  border-radius: .3rem;
+  padding: 1rem;
+  overflow-y: scroll;
+  height: 8rem;
+  background-color: whitesmoke;
+
+}

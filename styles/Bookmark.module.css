@@ -1,0 +1,19 @@
+.title{
+    font-family: Montserrat;
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 7rem auto;
+}
+
+.paragraph{
+    color: rgba(0, 0, 0, 0.761);
+    font-family: Montserrat;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 3rem;
+}

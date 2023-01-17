@@ -1,0 +1,168 @@
+.Header{
+    color: whitesmoke;
+    position: absolute;
+    font-size: 2rem;
+    width: 100%;
+    top: 0;
+    font-family: Bebas Neue;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    margin: 0 auto;
+    padding:1rem ;
+    list-style: none;
+}
+.Header>li>a{
+    color: white;
+    text-decoration: none;
+
+}
+.Header>li{
+    padding: .5rem;
+    cursor: pointer;
+    margin-left:3rem;
+    float: left;
+}
+.Header>li:last-child{
+    border-radius: 1rem;
+    color: black;
+    
+    background-color: rgb(255, 255, 255);
+    float: right;
+    margin-right: 2rem;
+}
+.Header>input{
+    display: none;
+    border: none;
+    width: 17rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    float: right;
+}
+
+
+.formContainer{
+    
+    gap: 1rem;
+    opacity: 0;
+    visibility:hidden;
+    transition: all .3s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: absolute;
+    z-index: 5;
+    width: 48rem;
+    border-radius: 1rem;
+    background-color:rgba(255, 255, 255, 0);
+    height: 23rem;
+
+}
+.formContainer>div{
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+}
+.formContainer>div>*{
+    border: none;
+    border-radius: .75rem;
+    display: block;
+    margin:1rem auto;
+    width: 90%;
+    padding: 1rem;
+
+
+}
+
+.formContainer>div>label{
+    padding: 0;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: Montserrat;
+
+}
+
+.formContainer>div>button{
+    cursor: pointer;
+    transition: all .3s;
+
+}
+
+.formContainer>div>button:hover{
+    font-size: larger;
+    color: white;
+    transition: all .3s;
+    background-color: #4158D0;
+}
+
+
+.popUpBlurry{
+    transition: all .3s;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    z-index: 4;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+   background-color: #4159d062;
+    background-image: linear-gradient(43deg, #4159d092 0%, #c850c097 46%, #ffcd70a2 100%);}
+.popUpCongrat{
+
+    transition: all .3s;
+
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 1rem;
+    z-index: 10;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30rem;
+    height: 20rem;
+    transform: translate(-50%,-50%);
+}
+
+.popUpCongrat>h3{
+    font-size: 1.85rem;
+    font-family: Montserrat;
+    text-align: center;
+}
+
+
+.popUpCongrat>button{
+    transition: all .3s;
+    cursor: pointer;
+    border-radius: .75rem;
+    font-size: 1.3rem;
+    font-family: Montserrat;
+    position: absolute;
+    top: 85%;
+    transform: translate(-50%,-50%);
+    height: 3rem;
+    left: 50%;
+    bottom: 1rem;
+    width: 50%;
+    border: none;
+    color: white;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+.popUpCongrat>button:hover{
+
+    transition: all .3s;
+    width: 80%;
+
+
+}
+
+@media screen and (max-width:1000px) {
+    .Header{
+        display:none;
+    }
+    
+}
