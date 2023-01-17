@@ -35,7 +35,7 @@ function Header() {
 
   // create a function to handle the sign in
   const sIn = () => {
-    fetch("http://localhost:3000/inscription", {
+    fetch("https://backend-oussnews.vercel.app/inscription", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -60,7 +60,7 @@ function Header() {
   };
 
   const connect = () => {
-    fetch("http://localhost:3000/connexion", {
+    fetch("https://backend-oussnews.vercel.app/connexion", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
