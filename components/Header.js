@@ -35,7 +35,7 @@ function Header() {
 
   // create a function to handle the sign in
   const sIn = () => {
-    fetch("https://backend-oussnews.vercel.app/inscription", {
+    fetch("https://backend-oussnews.vercel.app/users/inscription", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -60,7 +60,7 @@ function Header() {
   };
 
   const connect = () => {
-    fetch("https://backend-oussnews.vercel.app/connexion", {
+    fetch("https://backend-oussnews.vercel.app/users/connexion", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -78,21 +78,12 @@ function Header() {
           setIsLogged(true);
           setUsernameState(data.user.username);
           setMessageWelcome(data.message + " " + usernameSate);
-          // setIsSubscrided(true)
-
           setAppearCong(true);
         } else {
           setIsLogged(false);
           setMessageWelcome(data.message);
           setAppearCong(true);
         }
-        // if(data.result){
-        //   console.log("vous etes connectes")
-
-        // }else{
-        //   console.log("erreur quelque part")
-
-        // }
       });
   };
 
@@ -102,11 +93,6 @@ function Header() {
       visibility: "visible",
       transition: "all .3s",
     };
-    // styleFormCong={
-    //   "opacity": "1" ,
-    // "visibility":" visible",
-    // "transition":"all .3s"}
-
     styleFormCong = {
       opacity: "1",
       visibility: "visible",
